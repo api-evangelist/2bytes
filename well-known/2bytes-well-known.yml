@@ -1,0 +1,90 @@
+generated: '2026-09-05'
+method: probed
+source: >-
+  Direct HTTP probes of the named /.well-known/ path list on every host this record
+  knows: the registrable domain and www (2bytescorp.com), the 2bytes Play service host
+  (2bytesplay.com, linked from the 2bytescorp.com footer as the company's own service
+  brand), and the company blog host (blog.2bytescorp.com).
+note: >-
+  No host served a real /.well-known/ document. www.2bytescorp.com is a Framer-hosted
+  marketing site that returns a 10-byte "Not found" 404 for every path. 2bytesplay.com
+  is a single-page app whose catch-all answers HTTP 200 with the same 3,427-byte HTML
+  shell for EVERY /.well-known/ path probed — those 200s are not documents and are
+  recorded as misses. blog.2bytescorp.com is a Medium-hosted custom domain whose edge
+  returns 403 to non-browser clients. No WellKnown or SecurityTxt pointer is emitted:
+  this file records an absence, not a presence.
+hosts:
+- host: www.2bytescorp.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+- host: 2bytesplay.com
+  note: >-
+    Every path below returned HTTP 200 with an identical text/html SPA shell
+    (3,427 bytes, <!doctype html><html lang="ko">). None is a document; all are
+    recorded as misses per the soft-200 rule.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    result: html-shell
+  - path: /.well-known/openid-configuration
+    status: 200
+    result: html-shell
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    result: html-shell
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    result: html-shell
+  - path: /.well-known/api-catalog
+    status: 200
+    result: html-shell
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    result: html-shell
+  - path: /.well-known/agent-card.json
+    status: 200
+    result: html-shell
+  - path: /.well-known/agent.json
+    status: 200
+    result: html-shell
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    result: html-shell
+- host: blog.2bytescorp.com
+  note: Medium-hosted custom domain; edge returns 403 to non-browser clients on all paths.
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403
+  - path: /.well-known/aauth-resource.json
+    status: 403

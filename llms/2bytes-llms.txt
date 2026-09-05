@@ -1,0 +1,49 @@
+# 2bytes Corporation (투바이트)
+
+> South Korean game services and publishing company, founded 2020 in Seoul. Provides
+> game localization, QA testing, player support, content marketing, live operations and
+> global launch support to 40+ game company partners including Pearl Abyss and Kakao
+> Games. Also builds and operates an H5 (HTML5) in-app game platform integrated by
+> partner apps via SDK. Service brand: 2bytes Play.
+
+Important for agents: 2bytes publishes NO public API. There is no developer portal, no
+API reference, no OpenAPI/AsyncAPI/GraphQL contract, no SDK package in any public
+registry, no MCP server, and no A2A agent card. The H5 platform SDK referenced on the
+company site is offered through a business contact channel, not a self-serve developer
+program. Do not attempt to construct API calls against 2bytes; there is no published
+contract to call.
+
+## Company
+
+- [2bytes Corporation](https://www.2bytescorp.com/): Company site (Korean/English). Services, H5 game platform, partners, contact.
+- [2bytes Play](https://2bytesplay.com/ko/): Service brand site — localization, QA, player support, content marketing, portfolio, careers.
+- [Privacy policy](https://www.2bytescorp.com/terms): 개인정보처리방침 (personal information handling policy), effective 2022-05-16.
+- [Contact](https://www.2bytescorp.com/contact): Business contact form. Direct: contact@2bytescorp.com
+- [Blog](https://blog.2bytescorp.com/): Company blog, hosted on Medium as a custom domain.
+
+## Services
+
+- Game localization and LQA (translation, cultural adaptation, in-game text and voice)
+- Game QA testing (functional, compatibility, compliance)
+- Player support / customer service and community management
+- Content marketing for game launches
+- Live operations and global launch consulting
+- H5 game platform: App-in-App Game Center construction, global H5 game sourcing network, live ops and localization, SDK integration for partner apps
+
+## Related entities
+
+- [Ingrid Corporation](https://www.ingridcorp.com/): Affiliated global game publishing company linked from the 2bytes site footer. Profiled separately; not part of this record.
+
+## Profile artifacts in this repository
+
+- [Domain security probe](security/2bytes-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture, probed 2026-09-05.
+- [Well-known probe](well-known/2bytes-well-known.yml): Recorded absence — no /.well-known/ document served on any host.
+- [Plans](plans/2bytes-plans-pricing.yml): plan_count 0 — no published pricing.
+- [Rate limits](rate-limits/2bytes-rate-limits.yml): limit_count 0 — no published API, so no published limits.
+
+## Notes
+
+- This is an independent third-party profile by API Evangelist, built only from publicly
+  reachable material. It is not operated by or affiliated with 2bytes Corporation.
+- Generated from the API Evangelist catalog record; 2bytes serves no llms.txt of its own
+  (https://www.2bytescorp.com/llms.txt returned HTTP 404 on 2026-09-05).

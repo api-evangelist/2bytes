@@ -1,0 +1,13 @@
+generated: '2026-09-05'
+method: searched
+source: https://www.2bytescorp.com/
+limit_count: 0
+note: >-
+  No rate limits are documented because no public API is documented. 2bytes publishes
+  no developer portal, API reference, or machine-readable contract, so there is no
+  surface on which limits, response headers (X-RateLimit-*, RateLimit-*, Retry-After)
+  or an exhaustion status code could be published or observed. The one API-shaped host
+  in DNS, api.2bytescorp.com (A 3.34.111.0, AWS ap-northeast-2), accepts no connection
+  on 80 or 443 from the public internet, so nothing could be observed live either.
+  An honest zero, recorded rather than omitted.
+rate_limits: []

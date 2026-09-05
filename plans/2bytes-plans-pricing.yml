@@ -1,0 +1,15 @@
+generated: '2026-09-05'
+method: searched
+source: https://www.2bytescorp.com/
+docs: https://www.2bytescorp.com/contact
+plan_count: 0
+note: >-
+  2bytes publishes no pricing page, plan tiers, or rate card of any kind. The company
+  site (a ten-page Framer marketing site whose full sitemap is home, old-home, homenew-2,
+  404, four dated shareholder notices, terms and contact) carries no /pricing path and
+  no plan names. Every commercial route on the site is a single business contact channel
+  — a "Let's Collaborate" mailto to contact@2bytescorp.com and the /contact form. The
+  services offered (game localization, QA, player support, content marketing, live
+  operations, H5 game platform build and operation) are sold as project engagements
+  and priced privately, so plan_count is an honest zero rather than an omission.
+plans: []

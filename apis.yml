@@ -1,8 +1,17 @@
 aid: 2bytes
 name: 2bytes
-description: '2bytes is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: '2bytes Corporation (투바이트) is a South Korean game services and publishing
+  company founded in 2020 in Seoul, providing game localization, QA testing, player
+  support, content marketing, live operations and global launch support to more than
+  40 game company partners including Pearl Abyss and Kakao Games. The company also
+  builds and operates an H5 (HTML5) game platform that runs in-app without installation,
+  covering platform construction, global H5 game sourcing, localization and live
+  operations, integrated by partner apps through an SDK. Its service brand is 2bytes
+  Play. As of this profile 2bytes publishes no public developer portal, API reference,
+  or machine-readable API contract; the H5 platform SDK is offered through a business
+  contact channel rather than a self-serve developer program.'
 url: https://raw.githubusercontent.com/api-evangelist/2bytes/refs/heads/main/apis.yml
+image: https://framerusercontent.com/assets/esLqfsUu8HoVFr7VTvvnhnOWvtY.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +21,13 @@ created: '2026-09-05'
 modified: '2026-09-05'
 tags:
 - Company
+- Gaming
+- Game Services
+- Localization
+- Quality Assurance
+- Publishing
+- HTML5
+- South Korea
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,43 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/2bytes-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/2bytes
+  url: https://www.2bytescorp.com/
+- type: PrivacyPolicy
+  url: https://www.2bytescorp.com/terms
+- type: Blog
+  url: https://blog.2bytescorp.com/
+- type: Plans
+  url: plans/2bytes-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/2bytes-rate-limits.yml
+- type: LLMsTxt
+  url: llms/2bytes-llms.txt
+
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v3
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    The 2bytes homepage markets its H5 game platform as adoptable "with SDK integration
+    alone" (SDK 연동만으로), but no SDK reference, developer path, or machine-readable
+    contract is published anywhere on the ten-page Framer site — /developers, /docs,
+    /api and /openapi.json all 404, the one API-shaped host in DNS
+    (api.2bytescorp.com) refuses connections from the public internet, and the only
+    route to the platform is a mailto to contact@2bytescorp.com.
+  evidence:
+  - url: https://www.2bytescorp.com/developers
+    status: 404
+  - url: https://www.2bytescorp.com/openapi.json
+    status: 404
+  - url: https://api.2bytescorp.com/
+    status: 0
+  - url: https://www.2bytescorp.com/llms.txt
+    status: 404
+  checked: '2026-09-05'
