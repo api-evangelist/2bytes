@@ -64,5 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-2bytes is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/2bytes
+2bytes Corporation (투바이트) is a South Korean game services and publishing company founded in 2020 in Seoul, providing game localization, QA testing, player support, content marketing, live operations and global launch support to more than 40 game company partners including Pearl Abyss and Kakao Games. The company also builds and operates an H5 (HTML5) game platform that runs in-app without installation, covering platform construction, global H5 game sourcing, localization and live operations, integrated by partner apps through an SDK. Its service brand is 2bytes Play. As of this profile 2bytes publishes no public developer portal, API reference, or machine-readable API contract; the H5 platform SDK is offered through a business contact channel rather than a self-serve developer program.
+
+**Areas:** Company · Gaming · Game Services · Localization · Quality Assurance · Publishing · HTML5 · South Korea
+
+## 2bytes on APIs.io
+
+Everything profiled for 2bytes is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/2bytes/](https://apis.io/providers/2bytes/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [2Bytes Domain Security](https://apis.io/security/2bytes/2bytes-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [2Bytes Plans Pricing](https://apis.io/plans/2bytes/2bytes-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [2Bytes Rate Limits](https://apis.io/rate-limits/2bytes/2bytes-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.2bytescorp.com/)
+- [Blog](https://blog.2bytescorp.com/)
+- [Privacy policy](https://www.2bytescorp.com/terms)
+
+## API Evangelist rating
+
+**Kin Score 7.3** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 10.5 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/2bytes/](https://apis.io/providers/2bytes/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 2bytes: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/2bytes/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
